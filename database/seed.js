@@ -73,14 +73,15 @@ try {
   process.exit(1);
 }
 
-const databasePath = new URL("./", import.meta.url).pathname;
+const databasePath = new URL("./", import.meta.url);
 
 // Create the table(s)
 (async () => {
   // Grab the tables sql file
-  const codesTableSQL = fs
-    .readFileSync(path.join(databasePath, "./tables/codes.sql"))
-    .toString();
+  const codesTableSQL = fs.readFileSync(
+    new URL("./tables/codes.sql", databasePath),
+    "utf8",
+  );
 
   try {
     // Drop all our tables
