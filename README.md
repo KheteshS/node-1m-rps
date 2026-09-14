@@ -1,6 +1,6 @@
 # Overview
 
-This is the main repository that we used in the [Handling 1 Million Requests per Second Video](https://youtu.be/W4EwfEU8CGA).
+This repository demonstrates high‑performance request handling inspired by the [Handling 1 Million Requests per Second Video](https://youtu.be/W4EwfEU8CGA) demo, adapted and extended for my own experiments..
 
 ### Setup
 
